@@ -60,7 +60,7 @@ public class Board {
 
         for (int i = 0; i < 8; i++) {
             for (int e = 0; e < 8; e++) {
-                board[i][e].setPosition(new Position(e, i));
+                board[i][e].setPosition(new Position(i, e));
             }
         }
 

@@ -19,11 +19,11 @@ public class Pawn extends Piece implements Movement {
 
         Piece[][] board = super.emptyBoard();
 
-        System.out.println(y);
         // Need to add handling for if an enemy piece can be taken
         if (firstMove) {
             board[y + 1][x] = null;
             board[y + 2][x] = null;
+            firstMove = false;
         } else {
             board[y + 1][x] = null;
         }

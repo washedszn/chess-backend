@@ -10,7 +10,9 @@ public class Empty extends Piece implements Movement {
         super(p);
     }
 
-    public Piece[][] getMoves() { return null; }
+    public Piece[][] getMoves() {
+        return super.emptyBoard();
+    }
 
     public String toString() {
         return "Empty";

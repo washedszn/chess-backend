@@ -39,7 +39,7 @@ public class Queen extends Piece implements Movement {
                 }
             } else {
                 int p = i == 1 ? -1 : 1;
-                while (super.checkPosition(p + y)) {
+                while (super.checkPosition(p + x)) {
                     board[y][p + x] = null;
                     p = p < 0 ? p - 1 : p + 1;
                 }

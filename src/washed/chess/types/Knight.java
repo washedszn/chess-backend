@@ -26,10 +26,10 @@ public class Knight extends Piece implements Movement {
             int cY = changeY < 0 ? changeY + 1 : changeY - 1;
 
             if (super.checkPosition(x + cX) && super.checkPosition(y + changeY)) {
-                board[x + cX][y + changeY] = null;
+                board[y + changeY][x + cX] = null;
             }
             if (super.checkPosition(y + cY) && super.checkPosition(x + changeX)) {
-                board[x + changeX][y + cY] = null;
+                board[y + cY][y + changeY] = null;
             }
         }
 
